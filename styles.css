@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #557C56;
+}
+
+.title {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #33372C;
+    text-align: center;
+}
+
+h2 {
+    color: #33372C;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#flex {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#form {
+    font-size: 2rem;
+    border-radius: 5px;
+    background-color: #FF885B;
+    border: none;
+    color: #FFE5CF;
+    padding: 5px;
+    font-family: serif;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#form:hover {
+    cursor: pointer;
+    background-color: #825B32;
+}
+
+.bookshelf {
+    height: 40vh;
+}
+
+#addBook {
+    width: 50vw;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+ 
+  .modal-content {
+    background-color: #FFE5CF;
+    margin: 5% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50vw; 
+  }
+
+  label {
+    font-size: 2vw;
+    color: #33372C;
+  }
+
+  input {
+    height: 30px;
+  }
+
+  input[type="number"] {
+    width: 5vw;
+  }
+
+  #submit {
+    font-size: 1.5rem;
+    font-family: serif;
+    padding: 10px;
+    background-color:#FF885B;
+    color:#FFE5CF;
+    border: none;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+
+  #submit:hover {
+    cursor: pointer;
+    background-color: #825B32;
+}
+
+  .flex-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  li {
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: serif;
+    color: #33372C;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #33372C
+  }
+
+  #popUp {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100vw; 
+    height: 100vh; 
+    overflow: auto; 
+  }
+
+  #popUp p {
+    display: inline-block;
+    background-color: #FFE5CF;
+    margin: 25% 50%; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20vw;
+  }
+
+  @media (max-width: 650px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    #addBook {
+        width: 90vw;
+    }
+
+    .modal-content {
+        width: 80vw;
+    }
+
+    label {
+        font-size: 4vw;
+    }
+
+    input[type="number"] {
+        width: 8vw;
+    }
+  }
+
+
