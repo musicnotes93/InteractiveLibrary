@@ -8,6 +8,8 @@ body {
     background-color: #557C56;
 }
 
+
+
 .title {
     width: 50vw;
     display: flex;
@@ -48,7 +50,7 @@ h2 {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-#form:hover {
+#form:hover, #close:hover, #cancel-btn:hover, #discard-btn:hover {
     cursor: pointer;
     background-color: #825B32;
 }
@@ -61,8 +63,7 @@ h2 {
     width: 50vw;
 }
 
-.modal {
-    display: none; 
+#myModal {
     position: fixed; 
     z-index: 1; 
     left: 0;
@@ -74,8 +75,56 @@ h2 {
     background-color: rgba(0,0,0,0.4); 
   }
   
+  .hidden {
+    display: none;
+  }
+
+  .library {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:#33372C;
+    font-size: 1.5vw;
+    padding-bottom: 5px;
+  }
+
+  .btn {
+    padding: 5px;
+    background-color: #FF885B;
+    color:#FFE5CF;
+    border: none;
+  }
+
+  #close {
+    background-color: #FF885B;
+    color:#FFE5CF;
+    border: none;
+    padding: 5px;
+    font-size: 1.5vw;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  #confirm-close-dialog {
+    margin: auto;
+    padding: 20px;
+  }
+
+  .confirm-close-dialog-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+ .discard-message-text {
+  font-size: 1.2vw;
+  margin-bottom: 5px;
+ }
  
   .modal-content {
+    position: relative;
     background-color: #FFE5CF;
     margin: 5% auto; 
     padding: 20px;
@@ -120,13 +169,6 @@ h2 {
     align-items: center;
   }
 
-  li {
-    list-style: none;
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: serif;
-    color: #33372C;
-  }
 
   h3 {
     text-align: center;
@@ -134,25 +176,6 @@ h2 {
     color: #33372C
   }
 
-  #popUp {
-    display: none;
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100vw; 
-    height: 100vh; 
-    overflow: auto; 
-  }
-
-  #popUp p {
-    display: inline-block;
-    background-color: #FFE5CF;
-    margin: 25% 50%; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 20vw;
-  }
 
   @media (max-width: 650px) {
     h1 {
