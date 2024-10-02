@@ -50,9 +50,14 @@ h2 {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-#form:hover, #close:hover, #cancel-btn:hover, #discard-btn:hover {
+#form:hover, #close:hover, #cancel-btn:hover, #discard-btn:hover, .btn:hover {
     cursor: pointer;
     background-color: #825B32;
+}
+
+#rating {
+  font-size: 1.2rem;
+  padding: 5px;
 }
 
 .bookshelf {
